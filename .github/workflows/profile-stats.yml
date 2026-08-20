@@ -28,7 +28,9 @@ jobs:
 
       - name: Generate SVGs
         env:
-          ACCESS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+          # PROFILE_STATS_TOKEN (a PAT with repo scope) includes private
+          # contributions; without it the built-in token covers public data.
+          ACCESS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
           USER_NAME: madatef
         run: python generate_profile.py
 
