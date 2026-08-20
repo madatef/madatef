@@ -126,11 +126,11 @@ def uptime(created):
 
 THEMES = {
     "light": {
-        "band": "#0F6E56", "name": "#E1F5EE", "sub": "#9FE1CB", "meta": "#5DCAA5",
+        "band": "#0F566E", "name": "#E1EEF5", "sub": "#9FCBE1", "meta": "#5DA2CA",
         "stat": "#5F5E5A",
     },
     "dark": {
-        "band": "#04342C", "name": "#E1F5EE", "sub": "#5DCAA5", "meta": "#1D9E75",
+        "band": "#042234", "name": "#E1EEF5", "sub": "#5DA2CA", "meta": "#1D669E",
         "stat": "#8b949e",
     },
 }
